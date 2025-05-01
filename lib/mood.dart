@@ -1,11 +1,14 @@
 class Mood {
+
   final int day;
   final int month;
   final int year;
-  final int mood;
+  final String mood;
   final String description;
 
+
   Mood({
+
     required this.day,
     required this.month,
     required this.year,
@@ -13,7 +16,9 @@ class Mood {
     required this.description,
   });
 
+
   Map<String, Object?> toMap() {
+
     return {
       'day': day,
       'month': month,
@@ -23,8 +28,10 @@ class Mood {
     };
   }
 
+
   @override
   String toString() {
-    return '$day + $month + $year + $mood + $description';
+
+    return '$day, $month, $year, $mood, $description';
   }
 }
